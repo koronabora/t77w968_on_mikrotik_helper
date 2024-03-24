@@ -64,7 +64,7 @@ class SignalData:
      sinr = ''
 
      def getSinrColor(self):
-          val = int(self.sinr.strip(r'dB'))
+          val = float(self.sinr.strip(r'dB'))
           if val < 10:
                return colors.fg.red
           elif val < 18:
